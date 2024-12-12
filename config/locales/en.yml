@@ -14,8 +14,9 @@ en:
     show_this_archive: "Show this archive"
     back_to_archives: "Back to archives"
     destroy_this_archive: "Destroy this archive"
-    erorrs_count: "prohibited this archive from being saved"
+    errors_count: "prohibited this archive from being saved"
     title: "Title"
-    description: "description"
+    description: "Description"
   edit_archive:
     title: "Editing archive"
+  are_you_sure: "Are you sure?"

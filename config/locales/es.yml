@@ -14,8 +14,9 @@ es:
     show_this_archive: "Mostrar este archivo"
     back_to_archives: "Volver a archivos"
     destroy_this_archive: "Destruir este archivo"
-    erorrs_count: "interfieren que este archivo sea guardado"
+    errors_count: "interfieren que este archivo sea guardado"
     title: "Nombre"
     description: "Descripción"
   edit_archive:
     title: "Editando archivo"
+  are_you_sure: "¿Estás seguro?"

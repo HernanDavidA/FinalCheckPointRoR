@@ -1,11 +1,11 @@
-<% content_for :title, "New archive" %>
+<% content_for :title, t("archive.new_archive") %>
 
-<h1><%= t("archive.new_archive") %></h1>
+<div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+  <h1 class="text-3xl font-semibold text-center text-gray-800 mb-6"><%= t("archive.new_archive") %></h1>
 
-<%= render "form", archive: @archive %>
+  <%= render "form", archive: @archive %>
 
-<br>
-
-<div>
-  <%= link_to t("archive.back_to_archives"), archives_path %>
+  <div class="mt-6 text-center">
+    <%= link_to t("archive.back_to_archives"), archives_path, class: "text-blue-500 hover:text-blue-700" %>
+  </div>
 </div>

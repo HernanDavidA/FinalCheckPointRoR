@@ -64,14 +64,19 @@ class ArchivesController < ApplicationController
   def update
     respond_to do |format|
       if @archive.update(archive_params)
-        format.html { redirect_to @archive, notice: "Archive was successfully updated." }
+        format.html {
+          redirect_to @archive, notice: t("archive.update.success")
+        }
         format.json { render :show, status: :ok, location: @archive }
       else
-        format.html { render :edit, status: :unprocessable_entity }
+        format.html {
+          render :edit, status: :unprocessable_entity
+        }
         format.json { render json: @archive.errors, status: :unprocessable_entity }
       end
     end
   end
+
 
   # DELETE /archives/1 or /archives/1.json
   def destroy
@@ -104,9 +109,8 @@ class ArchivesController < ApplicationController
     end
     end
     def set_locale
-      I18n.locale ||= I18n.default_locale
+      I18n.locale = params[:locale] || I18n.default_locale
     end
-
     def default_url_options
       { locale: I18n.locale }
     end

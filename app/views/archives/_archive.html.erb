@@ -1,15 +1,29 @@
-<div id="<%= dom_id archive %>">
-  <p>
-    <strong><%= t("archive.title") %></strong>
-    <%= archive.title %>
-  </p>
+<div id="<%= dom_id archive %>" class="max-w-3xl mx-auto p-4 bg-white shadow-lg rounded-lg">
+  <h1 class="text-2xl font-bold mb-4"> <%= t("archive.show_this_archive") %></h1>
 
-  <p>
-    <strong><%= t("archive.description") %></strong>
-    <%= archive.description %>
-  </p>
+  <div class="mb-4">
+    <p class="text-lg">
+      <strong><%= t("archive.title") %>:</strong>
+      <span class="ml-2 text-gray-700"><%= archive.title %></span>
+    </p>
+  </div>
 
+  <div class="mb-4">
+    <p class="text-lg">
+      <strong><%= t("archive.description") %>:</strong>
+      <span class="ml-2 text-gray-700"><%= archive.description %></span>
+    </p>
+  </div>
 
-  <%= link_to "Edit this archive", edit_archive_path(archive) %> |
+  <div class="mt-6">
+    <%= link_to t("archive.edit_this_archive"), edit_archive_path(archive), class: "text-blue-600 hover:text-blue-800 font-medium" %>
+  </div>
+  
+  <div class="mt-4">
+    <%= link_to t("archive.back_to_archives"), archives_path, class: "text-gray-600 hover:text-gray-800 font-medium" %>
+  </div>
 
+  <div class="mt-6">
+    <%= button_to t("archive.destroy_this_archive"), archive, method: :delete, data: { confirm: t("archive.are_you_sure") }, class: "mt-2 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700" %>
+  </div>
 </div>
