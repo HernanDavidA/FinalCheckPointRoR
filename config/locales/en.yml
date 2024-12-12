@@ -1,10 +1,25 @@
 en:
   archive:
-    title: "Archives"
+    index: "Archives"
     create: 
       success: "Archive created successfully"
       error: "Error creating archive"
     update: 
       success: "Archive updated successfully"
       error: "Error updating archive"
+    destroy: 
+      success: "Archive destroyed successfully"
+      error: "Error destroying archive"
+    new_archive: "New archive"
+    show_this_archive: "Show this archive"
+    back_to_archives: "Back to archives"
+    destroy_this_archive: "Destroy this archive"
+    erorrs_count: "prohibited this archive from being saved"
+    title: "Title"
+    description: "description"
+  edit_archive:
+    title: "Editing archive"   
+
+
+  
 

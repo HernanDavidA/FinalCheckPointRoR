@@ -1,6 +1,6 @@
 <%= form_with url: request.path, method: :get, local: true do |f| %>
   <%= f.select :locale,
-    [["🇬🇧 English", "en"], ["🇨🇴 Español", "es"]
+    [["🇬🇧 English", "en"], ["🇨🇴 Español", "es"]],
     { selected: I18n.locale },
     { onchange: "this.form.submit()", class: "bg-gray-100 border rounded p-2" } %>
 <% end %>

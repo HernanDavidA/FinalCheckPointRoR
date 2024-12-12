@@ -1,0 +1,21 @@
+en:
+  archive:
+    index: "Archivos"
+    create: 
+      success: "Archivo creado exitosamente"
+      error: "Error creando archivo"
+    update: 
+      success: "Archivo actualizado exitosamente"
+      error: "Error actualizando archivo"
+    destroy: 
+      success: "Archivo destruido exitosamente"
+      error: "Error destruyendo archivo"
+    new_archive: "Nuevo archivo"
+    show_this_archive: "Mostrar este archivo"
+    back_to_archives: "Volver a archivos"
+    destroy_this_archive: "Destruir este archivo"
+    erorrs_count: "interfieren que este archivo sea guardado"
+    title: "Nombre"
+    description: "Descripción"
+  edit_archive:
+    title: "Editando archivo"

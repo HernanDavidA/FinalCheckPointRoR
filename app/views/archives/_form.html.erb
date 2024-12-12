@@ -1,7 +1,7 @@
 <%= form_with(model: archive) do |form| %>
   <% if archive.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(archive.errors.count, "error") %> prohibited this archive from being saved:</h2>
+      <h2><%= pluralize(archive.errors.count, "error") %> <%= t("archive.erorrs_count") %></h2>
 
       <ul>
         <% archive.errors.each do |error| %>
