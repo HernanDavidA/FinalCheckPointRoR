@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Archives" %>
+
+<h1><%= t("archive.title")%></h1>
+
+<div id="archives">
+  <% @archives.each do |archive| %>
+    <%= render archive %>
+    <p>
+      <%= link_to "Show this archive", archive %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New archive", new_archive_path %>

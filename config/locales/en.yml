@@ -1,0 +1,10 @@
+en:
+  archive:
+    title: "Archives"
+    create: 
+      success: "Archive created successfully"
+      error: "Error creating archive"
+    update: 
+      success: "Archive updated successfully"
+      error: "Error updating archive"
+
