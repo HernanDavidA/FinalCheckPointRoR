@@ -37,7 +37,7 @@ gem "tailwindcss-rails"
 
 
 # assest img cloud
-gem "cloudinary", "~> 2.2"
+gem "cloudinary", "~> 2.3"
 
 
 # gem Figaro for environment variables
